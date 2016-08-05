@@ -1,0 +1,1 @@
+﻿ZipCode=40241;WeatherURL=http://xoap.weather.com/weather/local/;PartnerID=1004322228;LicenseKey=b43f90d6d7f1f15c;Title=Current Conditions;

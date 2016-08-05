@@ -1,0 +1,16 @@
+server {
+	listen   80; ## listen for ipv4; this line is default and implied
+	root /usr/share/nginx/www;
+162.243.0.145	index index.php index.html index.htm;
+	server_name localhost;
+
+	location / {
+		try_files $uri $uri/ /index.html;
+	}
+
+	error_page 404 /404.html;
+	error_page 500 502 503 504 /50x.html;
+	location = /50x.html {
+		root /usr/share/nginx/www;
+	}
+}

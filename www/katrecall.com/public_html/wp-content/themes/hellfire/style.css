@@ -1,0 +1,376 @@
+/*
+Theme Name: HellFire
+Theme URI: http://smthemes.com/hellfire/
+Author: The Smart Magazine Themes
+Author URI: http://smthemes.com/
+Description: Template by SMThemes.com
+Version: 2.0
+License: Creative Commons 3.0
+Theme date: 10/06/2013
+License URI: license.txt
+Tags: white, red, light, fixed-width, featured-images, custom-menu, translation-ready, threaded-comments, theme-options
+*/
+
+
+/*	-==========================- GENERAL -==========================-  */
+/*------------------------------ PAGE ------------------------------*/
+@import url(css/fonts.css);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+html {
+	background:#0e0706;
+}
+body {	
+	background:url(images/background.png) 50% top repeat-x;
+	color:#181818;
+}
+a {
+	color:#a51005;
+}
+h1, h2, h3, h4, h5, h6, a.post_ttl {
+	color:#200a03;
+	text-decoration:none;
+}
+
+/*------------------------------ HEADER ------------------------------*/
+#header {
+	background:url(images/top.jpg) 50% top no-repeat;
+}
+#secondarymenu-container {
+	position:relative;
+}
+
+/*------------------------------ SEARCH ------------------------------*/
+#s {
+	background:#fff;
+	border:1px solid #48362f;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	box-shadow:0 1px 2px #000 inset; 
+	height:25px;
+	line-height:25px;
+	color:#7e7673;
+}
+.searchbtn {
+	width:44px;
+	height:46px;
+	margin-top:-16px;
+}
+
+/*------------------------------ CONTENT ------------------------------*/
+.articles dt {
+	border-top:1px dotted #796f66;
+	padding:0;
+	margin:0 30px;
+	margin-top:-1px;
+	padding-top:1px;
+	
+}
+.articles dt:first-child {
+	
+}
+.articles dd {
+	
+}
+#content .widget h3 {
+	font-size:18px;
+}
+
+.featured_image {
+	padding:4px;
+	background:#fff;
+	box-shadow:0 1px 3px #8d8d8d;
+	border:none;
+}
+.widget_posts ul li img,.widget_flickr a {
+	background:#fff;
+	border:none;
+	box-shadow:0 1px 3px #000;
+	padding:3px;
+	margin-bottom:5px;
+}
+#commentform #submit, input.readmore, a.readmore {
+	background:url(images/readmore.png) left top no-repeat;
+	border:none;
+	width:142px;
+	height:39px;
+	line-height:39px;
+	padding:0;
+	color:#fff;
+	text-shadow:0 0 2px #91371a;
+}
+.page-numbers {
+	padding:5px 10px;
+}
+a.page-numbers {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#2f0900;
+	box-shadow:0 0 2px #cdcac0 inset;
+	border:1px solid #beb69f;
+}
+span.page-numbers {
+	color:#fff;
+	border:1px solid #8f594f;
+	background:#3e0905;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	text-decoration:none;
+	cursor:pointer;
+}
+/*------------------------------ FOOTER ------------------------------*/
+#footer {
+	color:#dedede;
+	background-image: linear-gradient(bottom, rgb(13,0,4) 0%, rgb(64,14,0) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(13,0,4) 0%, rgb(64,14,0) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(13,0,4) 0%, rgb(64,14,0) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(13,0,4) 0%, rgb(64,14,0) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(13,0,4) 0%, rgb(64,14,0) 100%);
+	background-image: -webkit-gradient(	linear,	left bottom,	left top,	color-stop(0, rgb(13,0,4)),	color-stop(1, rgb(64,14,0)));
+	border-top:1px solid #60261b;
+	margin-top:20px;
+}
+#footer a {
+	color:#fff;
+}
+#footer h3 {
+	color:#fff;
+}
+#footer .footer_txt {
+	border-top:1px dashed #575757;
+}
+
+/*------------------------------ WIDGETS ------------------------------*/
+.tabs_captions .caption {
+	border-color:#fff;
+}
+.fp-next, .fp-prev {
+		margin-top:-52px;
+		width:41px;
+		height:105px;
+	}
+/*	-==========================- DESKTOP -==========================-  */
+@media only screen and (min-width:1024px) {
+	
+	#content-top {
+		height:43px;
+		width:1002px;
+	}
+	#content-bottom {
+		height:43px;
+		width:1002px;
+	}
+	#content .container{
+		width:998px;
+		padding:0 2px;
+		background-position:50% !important;
+	}
+	#logo {
+		width:298px;
+		position:absolute;
+		left:50%;
+		margin-left:-150px;
+	}
+	.menusearch {
+		float:right;
+		margin-top:45px;
+	}
+	/*------------------------------ MENU ------------------------------*/
+	#secondarymenu-container {
+		height:122px;
+		position:relative;
+	}
+	#secondarymenu {
+		float:left;
+		background:url(images/topmenu.png) left top repeat-x;
+		margin-top:55px;
+		box-shadow:0 0 2px #000;
+	}
+	#secondarymenu ul {
+		margin:0 10px;
+	}
+	#secondarymenu li {
+	}
+	#secondarymenu li:first-child {
+		border-left:none;
+	}
+	#secondarymenu li:last-child {
+		border-right:none;
+	}
+	#secondarymenu a {
+		color:#fff;
+		text-decoration:none;
+		padding:8px 10px;
+		display:block;
+	}
+	#mainmenu-container {
+		background:url(images/menu.png) left top no-repeat;
+		height:42px;
+		width:1000px;
+		padding:20px 9px;
+		margin:0 -9px;
+	}
+	#mainmenu li {
+	}
+	#mainmenu li a {
+		color:#fff;
+		padding:16px 30px;
+		display:block;
+		text-decoration:none;
+		font-family:'charlb';
+	}
+	#mainmenu li a:hover {
+		background:url(images/hoverli.png) 50% bottom no-repeat;
+	}
+	#header li ul {
+		top:39px;
+	}
+	#mainmenu li ul {
+		top:45px;
+		left:0%;
+	}
+
+
+	#header li ul  .transparent {
+		background:#a1322a;
+		-moz-opacity: 0.23;
+opacity: 0.23;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=23);
+
+	}
+	#header li ul .inner {
+		background:#440a05;
+		margin:1px;
+	}
+	#header ul.children li a, #header .sub-menu li a {
+		color:#fff !important;
+		padding:0 !important;
+	}
+	
+	
+	/*------------------------------ SLIDER ------------------------------*/
+	.slider-container {
+		background:url(images/slider.png) left top repeat-y;
+		position:relative;
+		padding-bottom:35px;
+		margin-bottom:20px;
+	}
+	.slider {
+		position:relative;
+		width:975px;
+		margin:0 auto;
+	}
+	.fp-prev-next-wrap {
+		
+	}
+	.fp-next, .fp-prev {
+		margin:0 10px;
+		margin-top:-13px;
+	}
+	.fp-slides,.fp-thumbnail,.fp-slides-items  {
+		height:408px;
+		width:975px;
+	}
+	.slider-nothumb .fp-content-fon {
+		background:#fff;
+	}
+	.slider-nothumb .fp-content a,.slider-nothumb .fp-content p{
+		color:#000;
+	}
+	.fp-nav {
+		
+	}
+
+	
+
+}
+
+
+/*	-==========================- TABLET -==========================-  */
+@media only screen and (min-width:640px) and (max-width:1023px) {
+	#logo {
+		float:left;
+	}
+	/*------------------------------ MENU ------------------------------*/
+	.menusearch {
+		float:right;
+		margin-top:25px;
+		margin-right:10px;
+	}
+	#secondarymenu-container {
+		height:102px;
+	}
+	#secondarymenu {
+		float:right;
+		clear:right;
+	}
+	#secondarymenu li {
+		padding:18px;
+	}
+	#secondarymenu li a{
+		color:#e9e9e9;
+		text-decoration:none;	
+	}
+	#mainmenu-container {
+		clear:left;
+		background: #3e0905; /* Old browsers */
+		background: -moz-linear-gradient(top,  #3e0905 0%, #2f0704 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e0905), color-stop(100%,#2f0704)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #3e0905 0%,#2f0704 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #3e0905 0%,#2f0704 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #3e0905 0%,#2f0704 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #3e0905 0%,#2f0704 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e0905', endColorstr='#2f0704',GradientType=0 ); /* IE6-9 */
+		margin-bottom:15px;
+		padding-bottom:15px;
+	}
+	#mainmenu {
+		margin:0 10px;
+	}
+	#mainmenu li {
+		
+		float:left;
+	}
+	#mainmenu a {
+		color:#fff;
+		text-decoration:none;
+		padding:15px 20px 7px;
+		display:block;
+	}
+	.slider-container { padding-bottom:35px;}
+}
+
+/*	-==========================- MOBILE -==========================-  */
+@media only screen and (min-width:240px) and (max-width:639px) {
+	.menusearch {padding:3px 0;}
+	#secondarymenu-container {
+		padding:0;
+		
+	}
+	#logo {
+		height:107px;
+	}
+	#secondarymenu, #mainmenu {
+		background:#fff;
+		margin:0 -2%;
+		padding:0 2%;
+		margin-top:10px;
+	}
+	#bgr {
+		width:100%;
+	}
+	#secondarymenu li, #mainmenu li {
+		border-top:1px solid #eee;
+	}
+	.footer-widgets .widgetf:first-child {
+		border:none;
+	}
+	#footer {
+		width:100%;
+	}
+	.widgetf {
+		border-top:1px solid #45362d;
+	}
+}

@@ -1,0 +1,12 @@
+server {
+	listen   80; 
+	root /var/www;
+	index index.html;
+	server_name 162.243.0.145;
+
+	error_page 404 /404.html;
+	location = /50x.htm {
+		root /usr/share/nginx/www;
+	}
+
+}

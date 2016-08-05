@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iAM Tracker</title>
+    <link rel="stylesheet" type="text/css" href="./themed/iAM/css/style.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./themed/iAM/fancybox/jquery.fancybox-1.2.6.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./themed/iAM/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=ABCDEFG"></script>
+    <script type="text/javascript" src="./themed/iAM/js/script.js"></script>
+    <!--<script type="text/javascript" src="./themed/iAM/js/preloadCssImages.jQuery_v5.js"></script>-->
+</head>
+<body>
+    <div id="main">
+        <p id="orig">
+            <a href="http://www.chipsofttech.com/site/lab.html" target="_blank">visit the ChipSoftTech
+                Lab</a>
+        </p>
+        <h1>
+            iAM Tracker - Personalities by Location</h1>
+        <h2>
+            Drag and drop your card to Share</h2>
+        <div id="gallery">
+            <div id="The_Annoying_One" class="pic">
+            </div>
+            <div id="The_Shy_One" class="pic">
+            </div>
+            <div id="The_Cutie_Pie" class="pic">
+            </div>
+            <div id="The_Drama_Queen" class="pic">
+            </div>
+            <div id="The_Flirt" class="pic">
+            </div>
+            <div id="The_Funny_Guy" class="pic">
+            </div>
+            <div id="The_Gangster" class="pic">
+            </div>
+            <div id="The_Geek" class="pic">
+            </div>
+            <div id="The_Good_Friend" class="pic">
+            </div>
+            <div id="The_Goodie_Twoshoes" class="pic">
+            </div>
+            <div id="The_Good_Little_Church_Girl" class="pic">
+            </div>
+            <div id="The_Grumy_One" class="pic">
+            </div>
+            <div id="The_Innocent_One" class="pic">
+            </div>
+            <div id="The_Jock" class="pic">
+            </div>
+            <div id="The_Ladiesman" class="pic">
+            </div>
+            <div id="The_Lazy_One" class="pic">
+            </div>
+            <div id="The_One_That_Always_Gets_Hurt" class="pic">
+            </div>
+            <div id="The_One_That_Alway_Swares" class="pic">
+            </div>
+            <div id="The_One_Thats_Always_Hungry" class="pic">
+            </div>
+            <div id="The_One_Thats_Up_To_No_Good" class="pic">
+            </div>
+            <div id="The_One_With_All_The_Gossip" class="pic">
+            </div>
+            <div id="The_One_With_The_Bad_Memory" class="pic">
+            </div>
+            <div id="The_One_You_Can_Depend_On" class="pic">
+            </div>
+            <div id="The_Pimp" class="pic">
+            </div>
+            <div id="The_Princess" class="pic">
+            </div>
+            <div id="The_Slow_One" class="pic">
+            </div>
+            <div id="The_Stylish_One" class="pic">
+            </div>
+            <div id="The_Tiny_Dangerous_One" class="pic">
+            </div>
+            <div id="The_Tower" class="pic">
+            </div>
+            <!-- Original with anchor to large pic
+            <div id="Div3" class="pic" style="top: 215px; left: 251px; background: url(themed/iAM/images/thumbs/whoooosh.jpg) no-repeat 50% 50%;
+                -moz-transform: rotate(-11deg); -webkit-transform: rotate(-11deg);">
+                <a class="fancybox" rel="fncbx" href="img/original/whoooosh.jpg" target="_blank">whoooosh</a>
+            </div>-->
+            <!-- Drop box -->
+            <div class="drop-box">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div>
+            <span class="info geolocation">info</span>
+        </div>
+    </div>
+    <!-- This is later converted to the modal window with the url of the image: -->
+    <div id="modal" title="Share your Personality">
+        <fieldset>
+            <span>Personality:&nbsp;</span> <span class="selectedPic"></span>
+            <div>
+                <span>City:&nbsp;</span>
+                <input type="text" name="city" id="city" class="city text ui-widget-content ui-corner-all" onfocus="this.select()" />
+            </div>
+            <div>
+                <span>Region:&nbsp;</span>
+                <input type="text" name="region" id="region" class="region text ui-widget-content ui-corner-all" onfocus="this.select()" />
+            </div>
+            <br />
+            <div>
+                <span>Register To Get Monthly Stats!&nbsp;</span>
+                <br />
+                <span>Email:&nbsp;</span>
+                <input type="text" name="email" id="email" class="email text ui-widget-content ui-corner-all" onfocus="this.select()" />
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,555 @@
+/*
+	Theme Name: PlanetGames
+	Theme URL: http://themepix.com/wordpress-themes/planetgames/
+	Description: PlanetGames is a free WordPress theme with featured posts option, post thumbnails and theme admin/options page. Suitable for any niche, especially for games blogs. <strong>TIP: When you do new posts, dont forget to set Featured Image, this will help to show thumbnail image on posts and featured slider posts.</strong>
+	Author: ThemePix.com
+	Author URI: http://themepix.com/
+	Version: 2.0
+*/
+
+/* LAYOUT */
+
+body {
+    background: none repeat scroll 0 0 #E5DC99;
+}
+#wrapper {
+    background: url("images/wrapper.jpg") no-repeat scroll center top transparent;
+}
+#wrapper-bg {
+    background: url("images/wrapper-bg.jpg") no-repeat scroll center 231px transparent;
+}
+#wrapper2 {
+}
+#container {
+}
+#contentwrap {
+    margin-top: 0;
+    padding-bottom: 5px;
+    width: 960px;
+}
+a {
+    color: #3366CC;
+    text-decoration: underline;
+}
+a:hover {
+    color: #5588AA;
+    text-decoration: none;
+}
+#header {
+    background: url("http://www.katrecall.com/wp-content/uploads/2013/10/katrecalllogosmall2.png") no-repeat scroll 0px 0 transparent;
+    height: 212px;
+    margin-top: 20px;
+}
+#header h1 {
+    font-family: Georgia,Helvetica,Sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 0 !important;
+    margin-top: 0;
+    padding: 10px 17px 3px 90px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: none;
+}
+#header h1 a, #header h1 a:visited {
+    color: #F5642F;
+    text-decoration: none;
+    margin-left: 30px;
+}
+#header h2 {
+    color: #F5642F;
+    font-family: Georgia,Helvetica,Sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 14px;
+    padding-left: 90px;
+    margin-left: 40px;
+}
+.logoimg {
+    margin: 14px 0 0 78px;
+}
+.feedtwitter {
+    margin-top: 0;
+    padding-top: 6px;
+    text-align: right;
+}
+.menu-links {
+    margin-left: 14px;
+    margin-top: 0;
+    width: 600px;
+}
+#pagemenucontainer {
+    height: 39px;
+    margin-top: 0;
+    padding: 0;
+}
+#pagemenu {
+    float: left;
+}
+#pagemenu, #pagemenu ul {
+    line-height: 1;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#pagemenu {
+    margin-left: 24px;
+}
+#pagemenu ul {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#pagemenu li {
+    border-right: 1px solid #75C123;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#pagemenu ul li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#pagemenu li a, #pagemenu li a:link {
+    color: #FFFFFF;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #333333;
+    text-transform: none;
+}
+#pagemenu li a:hover, #pagemenu li a:active {
+    background: none repeat scroll 0 0 #75C123;
+    display: block;
+    text-decoration: none;
+}
+#pagemenu li.current_page_item a {
+    background: none repeat scroll 0 0 #75C123;
+    text-decoration: none;
+}
+#pagemenu li:hover, #pagemenu li.sfhover {
+    color: #EDE9DD;
+    position: static;
+}
+#navcontainer {
+    display: block;
+    height: 52px;
+    overflow: hidden;
+}
+#navcontainer .current-cat a {
+    background: none repeat scroll 0 0 #75C123;
+}
+#content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #222222;
+    padding: 0;
+}
+pre {
+    overflow: auto;
+    width: 470px;
+}
+.post {
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.post p {
+    margin-bottom: 10px;
+}
+.title {
+    color: #000000;
+    font-family: Arial,Helvetica,Sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-transform: none;
+}
+.title a {
+    color: #000000;
+    text-decoration: none;
+}
+.title a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+.pagetitle {
+    font-family: Arial,Verdana;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.postdate {
+    color: #666666;
+    font-family: Arial,Helvetica,Sans-serif;
+    font-size: 12px;
+}
+.postmeta {
+    font-family: Arial,Verdana;
+    font-size: 11px;
+    padding: 2px 4px;
+}
+.postdate img, .postmeta img {
+    border: medium none;
+    margin: 0 2px 2px;
+    vertical-align: bottom;
+}
+.entry {
+    font-family: Arial,Verdana;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 8px;
+    text-align: justify;
+}
+.navigation {
+    padding: 10px 0;
+}
+blockquote {
+    border-left: 3px solid #CADAE7;
+    color: #888888;
+    font-style: italic;
+    overflow: hidden;
+    padding-left: 9px;
+}
+.post img {
+    max-width: 620px;
+}
+img.wp-smiley {
+    border: medium none;
+    margin: 0;
+    max-height: 12px;
+    padding: 0;
+}
+.aligncenter, div.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.wp-caption {
+    background-color: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    margin: 10px;
+    padding-top: 4px;
+    text-align: center;
+}
+.wp-caption img {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi a:active {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    color: #333333 !important;
+    font-size: 15px !important;
+    padding: 4px 8px !important;
+}
+.wp-pagenavi span.pages {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    color: #333333 !important;
+    font-size: 15px !important;
+    padding: 4px 8px !important;
+}
+.wp-pagenavi span.extend {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    color: #232323 !important;
+    font-size: 15px !important;
+    padding: 4px 8px !important;
+}
+.wp-pagenavi span.current {
+    background: none repeat scroll 0 0 #000000 !important;
+    border: 0 none !important;
+    color: #FFFFFF !important;
+    font-size: 15px !important;
+    font-weight: bold;
+    padding: 4px 8px !important;
+}
+.wp-pagenavi a:hover {
+    background: none repeat scroll 0 0 #393939 !important;
+    border: 0 none !important;
+    color: #FFFFFF !important;
+}
+.sidebaradbox {
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 5px;
+    text-align: center;
+}
+.ad125 {
+    margin: 6px;
+}
+.sidebar {
+    color: #333333;
+    font-size: 13px;
+    padding: 0;
+    text-shadow: 0 1px 0 #EEEEEE;
+}
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+#search {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+    height: 23px;
+    margin-top: 15px;
+    padding: 0;
+    text-align: right;
+}
+#search input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #000000;
+    float: left;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+#s {
+    background: none repeat scroll 0 0 transparent;
+    margin: 2px 0 0;
+    padding: 4px;
+    width: 240px;
+}
+#topsearch #search {
+    margin: 6px 6px 0 0;
+}
+#topsearch #s {
+    width: 164px;
+}
+.addthis_toolbox {
+    padding: 15px 0 0;
+    text-align: center;
+}
+.addthis_toolbox .custom_images a {
+    height: 32px;
+    margin: 0 3px;
+    padding: 0;
+    width: 32px;
+}
+.addthis_toolbox .custom_images a:hover img {
+    opacity: 1;
+}
+.addthis_toolbox .custom_images a img {
+    opacity: 0.85;
+}
+.sidebarvideo {
+}
+.sidebar h2 {
+    background: url("images/h2bg.jpg") repeat-x scroll 0 0 transparent;
+    border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,Sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: -10px -10px 0;
+    padding: 11px 10px 12px 11px;
+    text-align: left;
+    text-shadow: 0 1px 0 #000000;
+    text-transform: none;
+}
+.sidebar ul {
+    list-style-type: none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.sidebar ul li {
+    background: url("images/widget.jpg") repeat-x scroll 0 0 #81CB40;
+    border: 1px solid #91D25A;
+    border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+    list-style-type: none;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+.sidebar ul ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul li li, .sidebar ul li ul li {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-radius: 0 0 0 0;
+-moz-border-radius: 0 0 0 0;
+    box-shadow: none;
+    margin: 0 0 2px;
+    padding: 4px 0;
+}
+.sidebar ul li li:hover, .sidebar ul li ul li:hover {
+}
+#wp-calendar th {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-style: normal;
+    text-transform: capitalize;
+}
+#wp-calendar caption {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    margin: 2px 0;
+    padding: 2px 4px;
+    text-transform: uppercase;
+}
+#wp-calendar td {
+    color: #333333;
+    font: 12px 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+    letter-spacing: normal;
+    padding: 2px 0;
+    text-align: center;
+}
+#wp-calendar td:hover, #wp-calendar #today {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #000000;
+}
+#wp-calendar td:hover a {
+    color: #414445;
+}
+#wp-calendar {
+    empty-cells: show;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+#footer {
+    color: #333333;
+    font-size: 12px;
+    height: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 9px 0 0;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#footer a {
+    color: #333333;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+#credits {
+    color: #333333;
+    font-size: 11px;
+    padding: 5px 0 7px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#credits a {
+    color: #333333;
+    text-decoration: none;
+}
+#comments h3 {
+    margin-bottom: 10px;
+}
+#commentform input {
+    margin: 5px 5px 1px 0;
+    padding: 2px;
+    width: 170px;
+}
+#commentform {
+    margin: 5px 10px 0 0;
+}
+#commentform textarea {
+    padding: 2px;
+    width: 100%;
+}
+#respond:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+#commentform #submit {
+    float: right;
+    margin: 0 0 5px auto;
+}
+.alt {
+    margin: 0;
+    padding: 10px;
+}
+.commentlist {
+    padding: 0;
+    text-align: justify;
+}
+.commentlist li {
+    list-style: none outside none;
+    margin: 15px 0 10px;
+    padding: 5px 5px 10px 10px;
+}
+.commentlist li ul li {
+    margin-left: 10px;
+    margin-right: -5px;
+}
+.commentlist p {
+    margin: 10px 5px 10px 0;
+}
+.children {
+    padding: 0;
+}
+#commentform p {
+    margin: 5px 0;
+}
+.nocomments {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.commentmetadata {
+    display: block;
+    margin: 0;
+}
+.post_thumbnail {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 3px #CCCCCC;
+-webkit-box-shadow: 0 0 3px #CCCCCC;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+}

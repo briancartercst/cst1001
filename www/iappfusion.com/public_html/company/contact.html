@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contact Us | iAppFusion - Mobile Apps For Your Business</title>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+    <!-- javascripts -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/site.js"></script>
+    <!--[if IE 6]>
+	<script src="js/DD_belatedPNG.min.js"></script>
+	<script>
+	  DD_belatedPNG.fix('*');
+	</script>
+	<![endif]-->
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$("#ContactName").focus();
+		$('#contactForm').submit(function(event) {
+			event.preventDefault();
+			$.post('../mail.php', $('#contactForm').serialize(), function(resultMsg){
+				$("#divResultMessage").html(resultMsg);
+			});
+		});
+	});
+	</script>
+
+</head>
+<body>
+    <div id="header" class="container_12">
+        <div id="logo" class="grid_4">
+            <a href="../index.html">
+                <img src="../img/iAppFusionWebLogo.png" class="" alt="iAppFusion Software" /></a>
+        </div>
+        <div id="navigation" class="grid_8">
+            <div id="nav">
+							<ul>
+								<li><a href="../index.html" id="home-link">Home</a></li>
+								<li><a href="../cloud" id="cloud-link">Mobile Cloud</a></li>
+								<li><a href="../products" id="lab-link">Products</a></li>
+								<li><a href="../company" id="strategy-link" class="active">Company</a></li>
+								<li><a href="../careers" id="about-link">Careers</a></li>
+							</ul>
+							<p id="slogan">
+								<i><strong>iAppFusion - Mobile Apps For Your Business</strong></i>
+							</p>
+						</div>
+			</div>
+    </div>
+    <div id="content" class="clearfix">
+			<div id="subnav">
+				<div class="container_12">
+					<div class="grid_12 alpha">
+						<ul>
+						<li><a href="../company" id="about-link">About iAppFusion</a></li>
+						<li><a href="mission.html" id="Mission-link">Mission</a></li>
+						<li><a href="mangement.html" id="Management-link">Management Team</a></li>
+						<li><a href="news.html" id="news-link">Latest News</a></li>
+						<li><a href="whitepapers.html">White Papers </a></li>
+						<li><a href="contact.html" id="contact-link" class="active">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="topcontent" class="container_12">
+				<div id="ContactUs" class="section-extended clearfix">
+					<div class="grid_8">
+						<h2>Contact Us</h2>
+						<div id="divResultMessage" class="highlight">
+						</div>
+						<form id="contactForm" method="POST" action="../mail.php">
+						<div class="input text">
+							<label for="contactName">Name</label>
+							<input type="text" maxlength="100" value="" id="contactName" name="contactName" />
+						</div>
+						<div class="input text">
+							<label for="contactPhone">Phone</label>
+							<input name="contactPhone" type="text" value="" id="contactPhone" />
+						</div>
+						<div class="input text required">
+							<label for="contactEmail">Email</label>
+							<input name="contactEmail" type="text" maxlength="255" value="" id="contactEmail" />
+						</div>
+						<div class="input select">
+							<label for="contactInterest">I'm interested in</label>
+								<select name="contactInterest" id="contactInterest">
+									<option value="Company">iAppFusion</option>
+									<option value="ConsumerApps">Consumer Apps</option>
+									<option value="BusApps">Business Apps</option>
+									<option value="NonProfit">Non-Profit</option>
+									<option value="DataAnalytics">Data Analytics</option>
+									<option value="Other">Other</option>
+								</select>
+						</div>
+						<div class="input textarea">
+							<label for="contactMessage">Message</label>
+								<textarea name="contactMessage" cols="30" rows="6" id="contactMessage"></textarea>
+						</div>
+						<div class="submit">
+							<input type="submit" value="send" id="SubmitForm" />
+						</div>
+						</form>
+					</div> 
+					<div class="grid_4" style="margin-top: 43px;">
+						<h5 style="margin-bottom: 0px;">iAppFusion, LLC</h5>
+							402 Edinburgh Ct.<br />
+							Louisville, Kentucky 40222<br /><br />
+							Email:  info@iAppFusion.com<br />
+							Phone: (502) 365-5465<br />
+							eFax: (314) 237-4655<br />
+						</div>
+					</div>
+				</div>
+			</div>
+    <div id="footer">
+		<img id="BBBLogo" src="../img/BBB.png" alt="BBB Logo" />
+        <div class="container_12 clearfix">
+            <div class="grid_6">
+                <h2>
+                    Visit
+                </h2>
+                <div class="grid_2 alpha">
+									<ul>
+										<li><a href="../index.html">Home </a></li>
+										<li><a href="../cloud">Mobile Cloud </a></li>
+										<li><a href="../products">Products </a></li>
+										<li><a href="../company">Company </a></li>
+									</ul>
+								</div>
+								<div class="grid_2">
+									<ul>
+										<li><a href="../careers">Careers </a></li>
+										<li><a href="../company/news.html">News </a></li>
+										<li><a href="../company/whitepapers.html">White Papers </a></li>
+										<li><a href="../company/contact.html">Contact </a></li>
+									</ul>
+								</div>
+                <div class="grid_2 omega">
+                    <ul>
+                        <li></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_6">
+                <div id="rightfooter">
+                    <div class="email">
+                        <a href="mailto:info@iAppfusion.com">info@iAppFusion.com </a>
+                    </div>
+                    <ul>
+                        <li>&copy; iAppFusion, LLC </li>
+                        <li><a href="../company/terms.html">Terms </a></li>
+                        <li><a href="../company/privacy.html">Privacy </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('a[href^=http]').click(function () {
+                window.open(this.href);
+                return false;
+            });
+        });
+    </script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-17735842-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+</body>
+</html>

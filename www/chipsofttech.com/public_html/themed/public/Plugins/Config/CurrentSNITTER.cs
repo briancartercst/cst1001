@@ -1,0 +1,1 @@
+﻿SNITTERURL=http://74.128.119.207/rss/srss.htm;

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<HTML lang="en"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<META charset="utf-8">
+	<TITLE>PondWater Parser</TITLE>
+	<META name="keywords" content="JSON,javascript object notation,parser,parseur,online,en ligne,tool,outil,free,javascript,tree,treeview,tree view,arbre,arborescence,syntax highlighting,coloration syntaxique">
+	<META name="description" content="Analyze your PondWater JSON string as you type with an online Javascript parser, featuring tree view and syntax highlighting.">
+	<LINK rel="icon" type="image/png" href="./themed/pondwaterparser/images/favicon.png" id="favicon">
+	<LINK rel="stylesheet" type="text/css" href="./themed/pondwaterparser/css/style.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<SCRIPT type="text/javascript" src="./themed/pondwaterparser/js/jquery-1.4.2.min.js"></SCRIPT>
+	<SCRIPT type="text/javascript" src="./themed/pondwaterparser/js/parser.js"></SCRIPT>
+</HEAD><BODY class="tree-view colorize show-parse show-eval show-types show-indexes">
+	<HEADER>
+		<H1>iAppFusion Parser</H1>
+		<P>JSON string parsed for iAppFusion API</P>
+	</HEADER>
+	<DIV class="panel">
+		<SECTION id="json">
+			<H1>JSON</H1>
+			<P>Write your json string here</P>
+			<DIV><TEXTAREA rows="6" cols="100"></TEXTAREA></DIV>
+		</SECTION>
+	</DIV>
+	<DIV style="text-align:center;">
+		<DIV class="options" style="float:left;"><!--Do-->
+			<SPAN class="option" id="show-json-parse" title="Show or hide Parse"><A class="show">Parse</A></SPAN> &nbsp;
+			<SPAN class="option" id="show-json-eval" title="Show or hide Eval"><A class="show">Eval</A></SPAN> &nbsp;&nbsp;&nbsp;
+			<SPAN class="option" id="show-json-exec" title="Execute JSON"><A class="show">Execute JSON</A></SPAN> &nbsp;
+		</DIV>
+		<DIV class="options" style="float:right;"><!--Show-->
+			<SPAN class="option" id="show-types" title="Show or hide types"><A class="show">Types</A></SPAN> &nbsp;
+			<SPAN class="option" id="show-indexes" title="Show or hide array elements index"><A class="show">Indexes</A></SPAN> &nbsp;
+			<SPAN class="option" id="colorize" title="Color by type"><A class="show">Colors</A></SPAN> &nbsp;
+		</DIV>
+		<DIV class="options"><!--Display-->
+			<SPAN class="option" id="tree-view" title="Compact trees"><A class="show">Tree</A></SPAN>&nbsp;
+			<SPAN class="option middle" id="compact-tree-view" title="Compact trees"><A class="show">Compact Tree</A></SPAN>&nbsp;
+			<SPAN class="option" id="inline-view" title="Compact trees"><A class="show">Inline</A></SPAN> &nbsp;
+		</DIV>
+	</DIV>
+	<DIV class="panel">
+		<SECTION id="json-parse" class="ok">
+			<H1>parse(JSON)</H1>
+			<P>Strict parse result of your json string</P>
+			<CODE style="height: 369px; "></CODE>
+		</SECTION>
+		<SECTION id="json-eval" class="ok">
+			<H1>eval(JSON)</H1>
+			<P>Javascript Object created from your json string</P>
+			<CODE style="height: 369px; "></CODE>
+		</SECTION>
+		<HR>
+	</DIV>
+	<DIV class="actions right" id="samples">Samples: <A>Brand_Page</A>, <A>Brand_Read</A>, <A>Errors</A></DIV>
+    
+	<DIV class="panel" id="execution">
+		<H1>Execution Results(JSON)</H1>
+		<P><A id="execution-run">Execute</A></P>
+		<SECTION id="json-exec" class="ok">
+            <TEXTAREA id="code-exec" rows="6" cols="100"></TEXTAREA>
+			<!--<CODE id="code-exec" style="height: 140px; "></CODE>-->
+		</SECTION>
+	</DIV>
+	<DIV class="panel" id="history">
+		<H1>ChangeLog</H1>
+		<P><A id="history-close">Close</A></P>
+		<DIV id="history-list">
+            <p class="history-date">
+                05/08/2010 - Incorporated Cigar Tracker.
+            </p>
+			<P class="history-date">
+				01/05/2010 – Stricter String parse, better escape support.<BR>
+				<SPAN style="visibility:hidden">01/05/2010 –</SPAN> Collapsible Parse tree (as was Eval tree).<BR>
+				<SPAN style="visibility:hidden">01/05/2010 –</SPAN> Parse and Eval features can be turned off.<BR>
+				<SPAN style="visibility:hidden">01/05/2010 –</SPAN> BTW, IE6 is not supported anymore.
+			</P>
+			<P class="history-date">12/07/2009 – Add Indexes and Colors features.</P>
+			<P class="history-date">12/06/2009 – Top level object can be an array.</P>
+			<P class="history-date">11/30/2009 – Parser now supports escaped double quote (\") in string value and in property name.</P>
+		</DIV>
+	</DIV>
+	<FOOTER>
+		<P>
+			<SPAN style="display:inline-block">iAppFusion Parser by <A href="http://www.iAppFusion.com/" target="_blank">iAppFusion</A> is licensed under <A href="http://www.chipsofttech.com" target="_blank">Chippewa Software Technology</A> PondWater Solutions.</SPAN>
+			<SPAN style="display:inline-block">&nbsp;&nbsp;Webservice <a href="FishingPole.asmx?WSDL" target="_blank">WSDL Link.</a>&nbsp;&nbsp;&nbsp;&nbsp;Last update: 05/08/2010 – <A id="history-link">ChangeLog</A></SPAN>
+		</P>
+	</FOOTER>
+    <div id="test">
+    </div>
+
+</BODY></HTML>
